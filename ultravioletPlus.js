@@ -1,17 +1,3 @@
-// ==UserScript==
-// @name         Ultraviolet+
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Gets rid of Ultraviolet's default look.
-// @author       Lemonade
-// @match        https://ultraviolet.rainbowboyytofficial.repl.co/
-// @icon         https://cdn.discordapp.com/attachments/830624258551447562/1119644711171399750/Untitled2.png
-// @grant        none
-// ==/UserScript==
-
-(function() {
-    'use strict';
-
     const getTitle = document.querySelectorAll('h1');
     const getSearch = document.querySelectorAll('form input');
     const getSearchFocus = document.querySelectorAll('form input:focus');
@@ -105,4 +91,3 @@
     signature.zIndex = 42;
 
     document.body.appendChild(signature);
-})();
